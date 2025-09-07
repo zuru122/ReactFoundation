@@ -5,7 +5,7 @@ import './App.css'
 
 const pizzaData = [
   {
-    name: "Focaccia",
+    name: "Focaccia" ,
     ingredients: "Bread with italian olive oil and rosemary",
     price: 6,
     photoName: "pizzas/focaccia.jpg",
@@ -55,10 +55,10 @@ function App() {
   return (
     <>
       <div className='header'>
-
-      <h1>React!</h1>
-
+      <h1>Hello React!</h1>
       </div>
+      <Pizza />
+      <Pizza />
       <Pizza />
     </>
   )
@@ -67,7 +67,9 @@ function App() {
 function Pizza() {
   return (
     <>
+      <img src="/pizzas/spinaci.jpg" alt="Pizza spinaci" />
     <h2>Pizza Spinaci</h2>
+    <p>Tomato, mozarella, spinach, and ricotta cheese</p>
     
     </>
   )
